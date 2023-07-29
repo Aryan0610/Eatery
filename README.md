@@ -1,3 +1,3 @@
 Eatery
 
-Link : [Eatery](eat-eatery.netlify.app)
+Link : [Eatery](https://eat-eatery.netlify.app)
