@@ -1,0 +1,158 @@
+.CreateRecipeContainer {
+    padding: 40px;
+}
+
+.ImageContainer {
+    background-color: #E2EAFC;
+    border: 2px solid #323232;
+    border-radius: 10px;
+}
+
+.ImageContainer div {
+    width: 300px;
+    height: 300px;
+}
+
+.ImageContainer div input[type=image] {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  
+.NameAndImgContianer {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.NameAndDescripSectionContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 50%;
+}
+
+.NameAndDescripSectionContainer textarea {
+    border: none;
+    background: none;
+    resize: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #323232;
+}
+  
+.IngredientsAndInstructionsContainer {
+    display: flex;
+    column-gap: 80px;
+    margin-top: 80px;
+}
+  
+.InstructionsContainer, .IngredientsContainer {
+  font-size: 16px;
+  font-weight: 600;
+  width: 50%;
+  margin: 0;
+  height: fit-content;
+  background-color: #E2EAFC;
+  border-radius: 10px;
+}
+
+.IngredientsContainer {
+  width: 40%;
+}
+
+.serialNum {
+  display: flex;
+  justify-content: space-around;
+  width: 60px;
+  height: 40px;
+  align-items: center;
+  background-color: #FFE3BB;
+  border: 2px solid #323232;
+  border-radius: 100px;
+}
+
+.InstructionsElement, .IngredientsElement {
+  width: 100%;
+  display: flex;
+  column-gap: 40px;
+  /* margin-top: 20px; */
+  align-items: center;
+}
+
+.insTextarea {
+  border: none;
+  background: none;
+  resize: none;
+  border-bottom: 2px solid #323232;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.ingTextareaContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.ingTextareaContainer textarea {
+  border: none;
+  background: none;
+  resize: none;
+  border-bottom: 2px solid #323232;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.deleteBtn {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: #F3A4A4;
+  border: 2px solid #F3A4A4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addBtn {
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  background-color: #323232;
+  color: #E2EAFC;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.SubmitBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.SubmitBtn button {
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  background-color: #323232;
+  color: #E2EAFC;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .NameAndImgContianer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .InstructionsContainer, .IngredientsContainer {
+    width: calc(100% - 80px);
+  }
+}
