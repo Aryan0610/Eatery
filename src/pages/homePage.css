@@ -1,0 +1,86 @@
+.recipeArray {
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+  
+.recipeElement {
+    padding-bottom: 10px;
+
+    background-color: #FFE3BB;
+    
+    border: 2px solid #323232;
+    border-radius: 10px;
+}
+  
+.ImgContainer {
+    padding: 10px;
+    background-color: #E2EAFC;
+    border-radius: 10px 10px 0px 0px;
+}
+  
+.ImgContainer img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+.subContainer {
+    padding: 10px 0px;
+}
+
+.subContainer div {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 800;
+
+    color: var(--color1);
+
+    margin-left: 10px;
+}
+  
+.subContainer button {
+    font-family: Nunito;
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+
+    border: none;
+    background: none;
+
+    color: var(--color2);
+    background-color: var(--color1);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .recipeArray {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .recipeArray {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .recipeArray {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .recipeArray {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

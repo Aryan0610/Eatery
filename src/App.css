@@ -1,38 +1,1388 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+:root {
+  --color1: #323232;
+  --color2: #DBE3E7;
+  --color3: #E9EEF0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--color3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  font-family: Nunito;
+}
+
+/*NavBar*/
+/* .NavBar {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+
+  background-color: var(--color2);
+}
+
+.NavBarLogo {
+  display: flex;
+
+  font-size: 36px;
+  font-weight: 800;
+
+  align-items: center;
+
+  color: var(--color1);
+
+  cursor: pointer;
+}
+
+.NavBarComponents {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 5px 20px;
+
+  align-items: center;
+}
+
+.NBC_CreateBtn {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 800;
+
+  color: var(--color1);
+  cursor: pointer;
+}
+
+.NBC_SearchBarContainer {
+  position: relative;
+
+  width: 80%;
+}
+
+.NBC_SearchBar {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 80%;
+
+  padding: 5px 20px;
+
+  z-index: 10;
+
+  border: none;
+  background: none;
+  resize: none;
+
+  border-radius: 20px;
+  color: var(--color1);
+  background-color: var(--color3);
+}
+
+.NBC_SearchBar:focus {
+  outline: none;
+}
+
+.NBCSBC_ResultArray {
+  position: absolute;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 80%;
+
+  padding: 10px 20px;
+
+  z-index: 10;
+
+  border-radius: 20px;
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+.NBCSBC_ResultArray div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.NBCSBC_ResultArray div:hover {
+  scale: 1.0125;
+}
+
+.NBCSB_Bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  z-index: 5;
+}
+
+.NBRC_LogInBtn {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 5px 10px;
+  margin-right: 20px;
+
+  color: var(--color1);
+
+  border: none;
+  background: none;
+
+  border: 3px solid var(--color1);
+  border-radius: 100px;
+
+  cursor: pointer;
+}
+
+.NBRC_SignUpBtn {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 5px 10px;
+
+  border: none;
+  background-color: var(--color1);
+  color: var(--color2);
+
+  border: 3px solid var(--color1);
+  border-radius: 100px;
+
+  cursor: pointer;
+} */
+
+/* .Register{
+  margin: auto;
+  margin-top: 10vh;
+  
+  width: 30%;
+
+  padding: 40px 40px;
+
+  background-color: var(--color2);
+
+  border-radius: 10px;
+}
+
+.Register form {  
+  width: 100%;
+}
+
+.Register form label {
+  display: block;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: var(--color1);
+}
+
+.Register form input {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  background: none;
+  border: none;
+  border: 2px solid var(--color1);
+  border-radius: 5px;
+
+  width: 100%;
+}
+
+.Register form input:focus {
+  outline: none;
+}
+
+.Register form div {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Register form div button {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 5px 15px;
+
+  border: none;
+  background: none;
+
+  color: var(--color3);
+  background-color: var(--color1);
+
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.R_ButtonContainer {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.R_ButtonContainer div {
+  display: flex;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.R_ButtonContainer div button {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+
+  background: none;
+  border: none;
+
+  color: var(--color1);
+
+  cursor: pointer;
+} */
+
+/*Profile Side Panel*/
+/* .ProfileHeaderBtn {
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+.ProfileSidePanelBg {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 5;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ProfileSidePanel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  z-index: 10;
+
+  display: grid;
+  grid-template-rows: 50% 50%;
+
+  width: 30%;
+
+  border-radius: 20px 0px 0px 20px;
+
+  background-color: var(--color3);
+
+}
+
+.PS_UserDetails {
+  margin-top: 20px;
+}
+
+.PS_UserDetails div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.PSUD_ImgContainer img {
+  width: 50%;
+}
+
+.PSUD_UsenameContainer {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 800;
+
+  color: var(--foreGround);
+} 
+
+.PSUD_FollowerContainer div {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.PSUD_EditProfileConainerBtn div{
+  outline: none;
+  border: none;
+
+  background: none;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  padding: 10px 15px 10px 15px;
+
+  border: 2px solid var(--foreGround);
+  border-radius: 60px;
+
+  color: var(--color2);
+  background-color: var(--color1);
+
+  cursor: pointer;
+}
+
+.PSUD_EditProfileConainerBtn div img {
+  margin-right: 10px;
+}
+
+.PS_ButtonContainer {
+  padding: 20px;
+
+  background-color: var(--color2);
+
+  border-radius: 20px 20px 0px 0px;
+}
+
+.PS_ButtonContainer div {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  color: var(--color1);
+}
+
+.PSBC_Button {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.PSBC_Button div {
+  display: flex;
+  align-items: center;
+}
+
+.PSBC_Button div img {
+  margin-right: 10px;
+}
+
+.PSBC_Button:hover {
+  scale: 1.0125;
+  transition: 0.0625s ease-in-out;
+}
+
+.PSBC_Button img {
+  cursor: pointer;
+}  */
+
+/*Edit Profile Side Panel*/
+.EditProfileSidePanel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  z-index: 10;
+
+  display: grid;
+  grid-template-rows: 50% 50%;
+
+  width: 30%;
+
+  border-radius: 20px 0px 0px 20px;
+
+  background-color: var(--color3);
+}
+
+.EPS_UserDetails {
+  width: 90%;
+}
+
+.EPSUD_ImgContainer {
+  margin: auto;
+}
+
+.EPSUD_ImgContainer div img {
+  width: 60%;
+}
+
+.EPS_ButtonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.EPS_ButtonContainer div {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  height: fit-content;
+
+  padding: 5px 10px;
+
+  border: 1px solid var(--color1);
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+/*Recipe Array*/
+/* .R_Array {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.R_element {
+  margin: 20px;
+  padding-bottom: 10px;
+
+  background-color: var(--color2);
+  border-radius: 10px;
+}
+
+.RE_ImgContainer {
+  position: relative;
+}
+
+.RE_ImgContainer img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.RE_TimeDisplayDiv {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  padding: 5px 10px;
+
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 400;
+  
+  border-radius: 0px 20px 0px 0px;
+  background-color: var(--color2);
+}
+
+.RE_NameAndBtnContainer {
+  position: relative;
+}
+
+.RE_NameAndBtnContainer div {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 800;
+
+  color: var(--color1);
+
+  margin-left: 10px;
+}
+
+.RENABC_ShowRecipeBtn {
+  font-family: Nunito;
+  font-size: 12 px;
+  font-weight: 400;
+
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+
+  border: none;
+  background: none;
+
+  color: var(--color2);
+  background-color: var(--color1);
+
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.RE_SaveBtn {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+
+  padding: 5px 10px;
+
+  background: none;
+  border: none;
+
+  background-color: var(--color1);
+  border-radius: 20px;
+} */
+
+/*Recipe Details*/
+/* .RC_DisplayRecipe {
+  padding: 50px;
+}
+
+.RCDR_ImgAndDescription {
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+
+  width: 90%;
+}
+
+.RCDR_ImgContainer img {
+  width: 350px;
+  height: auto;
+
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+}
+
+.RCDR_RightSide {
+  width: 50%;
+}
+
+.RCDRDC_Name {
+  display: flex;
+  justify-content: space-around;
+
+  font-family: Nunito;
+  font-size: 32px;
+  font-weight: 600;
+
+  color: var(--color1);
+
+  margin-bottom: 10px;
+}
+
+.RCDRDC_Description {
+  display: flex;
+  justify-content: space-around;
+
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 400;
+
+  color: var(--color1);
+
+  margin-bottom: 10px;
+}
+
+.RCDR_RecipeDetails {
+  display: flex;
+
+  width: 60%;
+
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.RCDR_RecipeDetails div {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 5px 10px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  color: var(--color1);
+
+  border: 2px solid var(--color1);
+  border-radius: 20px;
+}
+
+.RCDR_NutrientsContainer {
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 5px 10px;
+
+  width: fit-content;
+
+  background-color: var(--color2);
+
+  border-radius: 10px;
+}
+
+.RCDR_NutrientsContainer div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.RCDRDC_VR {
+  width: 1px;
+  background-color: var(--color1);
+}
+
+.RCDRDCNCC_Title, .RCDRDCNCC_Title, .RCDRDCNCC_Title, .RCDRDCNCC_Title {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.RCDR_IngredientsAndInstructionsContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  margin: auto;
+  margin-top: 100px;
+
+  width: 90%;
+}
+
+.RCDR_InstructionsContainer {
+  width: 90%;
+  height: fit-content;
+
+  padding: 30px 20px;
+
+  border-radius: 10px;
+
+  background-color: var(--color2);
+}
+
+.RCDRInsC_Title {
+  display: flex;
+  justify-content: space-around;
+
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 700;
+
+  color: var(--color1);
+}
+
+.RCDRInsCI_Div {
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  align-items: center;
+}
+
+.RCDRInsCI_Num div {  
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 800;
+
+  padding: 10px 15px;
+
+  width: fit-content;
+
+  color: var(--color1);
+  background-color: var(--color3);
+  border-radius: 20px;
+}
+
+.RCDRInsCI_Text {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-left: 20px;
+
+  color: var(--color1);
+}
+
+.RCDR_IngredientsContainer {
+  width: 90%;
+  height: fit-content;
+
+  padding: 30px 20px;
+
+  border-radius: 10px;
+
+  background-color: var(--color2);
+}
+
+.RCDRIngC_Title {
+  display: flex;
+  justify-content: space-around;
+
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 700;
+
+  color: var(--color1);
+}
+
+.RCDRIngCI_Div {
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  align-items: center;
+}
+
+.RCDRIngCI_Num div {  
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 800;
+
+  padding: 10px 15px;
+
+  width: fit-content;
+
+  color: var(--color1);
+  background-color: var(--color3);
+  border-radius: 20px;
+}
+
+.RCDRIngCI_Text {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-left: 20px;
+
+  color: var(--color1);
+}
+
+.RCDRIngCIT_Quantity {
+  font-size: 14px;
+  font-weight: 400;
+} */
+
+/*Create Recipe*/
+/* .CreateRecipeContainer {
+  width: 90%;
+
+  margin: auto;
+}
+
+.CRC_NameAndImgContianer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.CRCNAIC_ImgSection {
   display: flex;
   flex-direction: column;
+
+  width: 20%;
+}
+
+.CRCNAIC_NameAndDescripSection {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.CRCNAIC_Name {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+
+  background: none;
+  border: none;
+  resize: none;
+
+  border-bottom: 1px solid var(--color1);
+
+  color: var(--color1);
+}
+
+.CRCNAIC_Name:focus {
+  outline: none;
+}
+
+.CRCNAIC_Description {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  background: none;
+  border: none;
+  resize: none;
+
+  border-bottom: 1px solid var(--color1);
+
+  color: var(--color1);
+}
+
+.CRCNAIC_Description:focus {
+  outline: none;
+}
+
+.CRCNAICNADS_VegOrNonvegSection {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 10px;
+}
+
+.CRCNAICNADSVONS_NotSelected {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  
+  padding: 0px 10px;
+
+  background: none;
+  border: none;
+
+  border: 1px solid var(--color1);
+  border-radius: 20px;
+
+  color: var(--color1);
+  background-color: var(--color2);
+
+  cursor: pointer;
+}
+
+.CRCNAICNADSVONS_Selected {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  
+  padding: 0px 10px;
+
+  background: none;
+  border: none;
+
+  border: 1px solid var(--color1);
+  border-radius: 20px;
+
+  color: var(--color2);
+  background-color: var(--color1);
+
+  cursor: pointer;
+}
+
+.CRCNAIC_TimeAndServingsContainer {
+  display: flex;
+
+  margin: auto;
+}
+
+.CRCNAIC_TimeContainer, .CRCNAIC_ServingContainer {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: var(--color1);
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.CRCNAIC_TimeContainer textarea, .CRCNAIC_ServingContainer textarea {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+
+  background: none;
+  border: none;
+  resize: none;
+
+  color: var(--color1);
+
+  border-bottom: 1px solid var(--color1);
+
+  width: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.CRCNAIC_TimeContainer textarea:focus, .CRCNAIC_ServingContainer textarea:focus {
+  outline: none;
+}
+
+.CRCNAIC_NutrientsContainer {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 15px 30px;
+
+  background-color: var(--color2);
+  border-radius: 10px;
+}
+
+.CRCNAICNC_CaloriesDiv, .CRCNAICNC_CarbsDiv, .CRCNAICNC_ProteinDiv, .CRCNAICNC_FatDiv {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.CRCNAICNC_CaloriesDiv div, .CRCNAICNC_CarbsDiv div, .CRCNAICNC_ProteinDiv div, .CRCNAICNC_FatDiv div {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-around;
+
+  color: var(--color1);
+}
+
+.CRCNAICNC_VR {
+  width: 2px;
+  height: 100%;
+
+  border-radius: 20px;
+  background-color: var(--color1);
+}
+
+.CRCNAICNC_CaloriesDiv div textarea, .CRCNAICNC_CarbsDiv div textarea, .CRCNAICNC_ProteinDiv div textarea, .CRCNAICNC_FatDiv div textarea {
+  background: none;
+  border: none;
+  resize: none;
+
+  border-bottom: 1px solid var(--color1);
+
+  margin: auto;
+
+  width: 50%;
+}
+
+.CRCNAICNC_CaloriesDiv div textarea:focus, .CRCNAICNC_CarbsDiv div textarea:focus, .CRCNAICNC_ProteinDiv div textarea:focus, .CRCNAICNC_FatDiv div textarea:focus {
+  outline: none;
+}
+
+.CRC_IngAndInsContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  margin-top: 40px;
+}
+
+.CRC_InstructionsContainer {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 80%;
+  height: fit-content;
+
+  color: var(--color1);
+  background-color: var(--color2);
+
+  border-radius: 10px;
+}
+
+.CRC_InstructionsContainer h2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.CRC_InstructionsContainer button {
+  display: flex;
+
+  margin: auto;
+
+  border: none;
+  background: none;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.CRCIC_Component {
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  margin-bottom: 10px;
+}
+
+.CRCICC_SerialNum {
+  margin: auto;
+
+  padding: 5px 10px;
+
+  color: var(--color1);
+  background-color: var(--color3);
+  border-radius: 20px;
+}
+
+.CRCICC_Description {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  border: none;
+  background: none;
+  resize: none;
+
+  width: 90%;
+
+  margin-left: 10px;
+
+  border-bottom: 1px solid var(--color1);
+
+  color: var(--color1);
+}
+
+.CRCICC_Description:focus {
+  outline: none;
+}
+
+.CRC_IngredientsContainer {
+  background-color: var(--color2);
+  border-radius: 10px;
+
+  height: fit-content;
+}
+
+.CRC_IngredientsContainer h2 {
+  font-family: Nunito;
+  font-size: 22px;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: space-around;
+
+  color: var(--color1);
+}
+
+.CRCIngC_Component {
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  margin-bottom: 10px;
+}
+
+.CRCIngCC_SerialNum {
+  margin: auto;
+
+  padding: 5px 10px;
+
+  color: var(--color1);
+  background-color: var(--color3);
+  border-radius: 20px;
+}
+
+.CRCIngCC_NameAndQuantityContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10px;
+}
+
+.CRCIngC_Component div textarea {
+  border: none;
+  background: none;
+  resize: none;
+
+  width: 90%;
+  border-bottom: 1px solid var(--color1);
+}
+
+.CRCIngC_Component div textarea:focus {
+  outline: none;
+}
+
+.CRCIngCC_Name {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.CRCIngCC_Quantity {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.CRC_IngredientsContainer {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 80%;
+  height: fit-content;
+
+  color: var(--color1);
+  background-color: var(--color2);
+
+  border-radius: 10px;
+}
+
+.CRC_IngredientsContainer button {
+  display: flex;
+
+  margin: auto;
+
+  border: none;
+  background: none;
+
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.CRC_SubmitBtn {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-around;
+}
+
+.CRC_SubmitBtn button {
+  border: none;
+  background: none;
+
+  padding: 5px 10px;
+  margin-top: 50px;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: var(--color2);
+  background-color: var(--color1);
+
+  border-radius: 20px;
+
+  cursor: pointer;
+} */
+
+@media screen and (max-width: 900px) {
+  .NavBarRegisterContainer {
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+
+  .RC_DisplayRecipe {
+    padding: 10px;
+  }
+
+  .RCDR_ImgAndDescription {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RCDR_LeftSide {
+    width: 90%;
+
+    margin: auto;
+  }
+
+  .RCDR_RecipeDetails div {
+    font-size: 12px;
+  }
+
+  .RCDR_ImgContainer {
+    width: 100%;
+  }
+
+  .RCDR_ImgContainer img {
+    width: 100%;
+  }
+
+  .RCDR_RightSide {
+    width: 90%;
+
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .RCDR_RecipeDetails {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .RCDR_IngredientsAndInstructionsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RCDR_IngredientsContainer {
+    margin-top: 40px;
+  }
+
+  .CRC_NameAndImgContianer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CRCNAIC_ImgSection {
+    width: 80%;
+
+    margin: auto;
+  }
+
+  .CRCNAIC_NameAndDescripSection {
+    width: 80%;
+
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .CRC_IngAndInsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CRC_InstructionsContainer {
+    width: 80%;
+
+    margin: auto;
+  }
+
+  .CRC_IngredientsContainer {
+    width: 80%;
+
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .R_Array {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .NavBarComponents {
+    padding: 5px 0px 5px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .R_Array {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .RCDRInsCI_Text {
+    font-size: 14px;
+  }
+
+  .NavBarLogo {
+    font-size: 16px;
+  }
+
+  .NBC_CreateBtn {
+    font-size: 12px;
+    font-weight: 400;
+
+    position: fixed;
+
+    bottom: 0;
+    right: 0;
+
+    z-index: 10;
+
+    margin: 20px;
+    padding: 5px 10px;
+
+    color: var(--color3);
+    background-color: var(--color1);
+
+    border-radius: 20px;
+  }
+
+  .ProfileSidePanel {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+  }
+
+  .NavBarRegisterContainer {
+    display: flex;
+    width: fit-content;
+
+    margin: auto;
+  }
+
+  .NBRC_LogInBtn{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+
+  .NBRC_SignUpBtn{
+    display: none;
+  }
+
+  .Register {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .Register form div button {
+    font-size: 12px;
+  }
+
+  .R_ButtonContainer div {
+    font-size: 12px;
+  } 
+
+  .R_ButtonContainer div button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .R_Array {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .R_Array {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .NBRC_LogInBtn {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+    
+}
+
+@media screen and (max-width: 300px) {
+  .R_Array {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

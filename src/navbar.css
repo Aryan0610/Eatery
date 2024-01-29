@@ -1,0 +1,157 @@
+.NavBar {
+    width: calc(100% - 80px);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 80px;
+    padding: 10px 40px;
+    align-items: center;
+    background-color: #F3A4A4;
+    border-bottom: 2px solid #323223;
+    border-radius: 0px 0px 10px 10px;
+}
+  
+.SearchBarContainer {
+    width: 100%;
+    z-index: 11;
+    position: relative;
+}
+  
+.SearchBar {
+    border: none;
+    background: none;
+    resize: none;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 20px;
+    width: 100%;
+    color: #323232;
+    background-color: #F3F8FF;
+    border: 2px solid #323232;
+    border-radius: 100px;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+.SearchBarBg.NotVisible {
+    position: absolute;
+}
+
+.SearchBarBg.Visible {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.2;
+    background-color: #323232;
+}
+
+.SearchResultsDiv {
+    position: absolute;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #F3F8FF;
+    border: 2px solid #323232;
+    border-radius: 10px;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+.SearchResultItem {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0px;
+    color: #323232;
+    cursor: pointer;
+}
+
+.NavBarButtonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+
+.NavBarButtonsContainer button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #323232;
+    border: 2px solid #323232;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ProfileSidePanelBg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #323232;
+    opacity: 0.4;
+    z-index: 15;
+}
+
+.ProfileSidePanel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: #F3F8FF;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 20;
+}
+
+.ProfileSidePanel .ButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ProfileSidePanel .ButtonContainer button{
+    border: none;
+    background: none;
+    width: 60%;
+    margin-top: 40px;
+    padding: 20px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #323232;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .Logo {
+        width: 100px;
+    }
+    
+    .NavBar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .SearchBarContainer {
+        display: none;
+    }
+
+    .ProfileSidePanel {
+        left: 20%;
+        width: 80%;
+    }
+}

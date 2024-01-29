@@ -1,0 +1,145 @@
+:root {
+    --black: #323232;
+    --blue: #E2EAFC;
+}
+
+.RecipeContainer {
+    padding: 40px;
+    font-family: 'Quicksand';
+    color: #323232;
+}
+
+.ImgNameDescriptionContainer {
+    display: flex; 
+    column-gap: 80px;
+    padding: 50px 0px;
+}
+
+.NameDescriptionContainer {
+    font-weight: 400;
+}
+
+.NameDescriptionContainer div {
+    font-weight: 600;
+}
+
+.ImgNameDescriptionContainer .ImgContainer {
+    border: 2px solid var(--black);
+    border-radius: 10px;
+}
+
+.ImgNameDescriptionContainer .ImgContainer img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.ImgNameDescriptionContainer .NameDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.ImgNameDescriptionContainer .NameDescriptionContainer span {
+    font-size: 18px;
+}
+
+.ElementHr {
+    border: 1px solid #323232;
+    width: 90%;
+    margin: 10px 0px;
+}
+
+.ElementIndex {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFE3BB;
+    border: 2px solid #323232;
+    border-radius: 50%;
+}
+
+.ElementItem {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ElementItem > div:first-child {
+    font-weight: 600;
+}
+
+.ElementItem > div:last-child {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Padding {
+    padding: 40px;
+}
+
+.InstructionsIngredientsContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 40px 40px;
+}
+
+.InstructionsContainer, .IngredientsContainer {
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--blue);
+    border: 2px solid #323232;
+    border-radius: 10px;
+    margin: 20px 40px;
+}
+
+.InstructionsContainerHeader, .IngredientsContainerHeader {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ElementContainer {
+    width: 100%;
+}
+
+.InstructionElement, .IngredientsElement {
+    display: grid;
+    grid-template-columns: 10% 80%;
+    column-gap: 40px;
+    align-items: center;
+    width: calc(100% - 40px);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .ImgNameDescriptionContainer {
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+
+    .ImgContainer {
+        width: fit-content;
+    }
+    
+    .IngredientsAndInstructionsContainer {
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+}

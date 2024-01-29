@@ -1,0 +1,104 @@
+.logo {
+    width: "100%";
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    color: #323232;
+}
+
+.formContainer {
+  margin: auto;
+  width: 30%;
+  padding: 40px 80px;
+  background-color: #FFE3BB;
+  border-radius: 10px;
+}
+
+.formContainer form {  
+  width: 100%;
+}
+
+
+.formContainer form label {
+  display: block;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: var(--color1);
+}
+
+.formContainer form input {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  background: none;
+  border: none;
+  border: 2px solid var(--color1);
+  border-radius: 5px;
+
+  width: 100%;
+}
+
+.formContainer form input:focus {
+  outline: none;
+}
+
+.formContainer form div {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formContainer form div button {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+
+  padding: 5px 15px;
+
+  border: none;
+  background: none;
+
+  color: var(--color3);
+  background-color: var(--color1);
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+  
+.LinkToBtn {
+  display: flex;
+  column-gap: 10px;
+  width: 100%;
+}
+  
+.LinkToBtn button {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+
+  background: none;
+  border: none;
+
+  color: var(--color1);
+
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .formContainer {
+    width: 80%;
+    padding: 40px;
+  }
+}
